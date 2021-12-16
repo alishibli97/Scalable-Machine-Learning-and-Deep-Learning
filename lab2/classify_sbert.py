@@ -162,6 +162,7 @@ PATH = "models/classification.pt"
 torch.save(sbert.state_dict(), PATH)
 PATH = "models/classification.pt"
 
+'''
 sbert = SBERT()
 sbert.load_state_dict(torch.load(PATH))
 sbert.train()
@@ -268,3 +269,4 @@ def create_embeddings(sentences):
 
     embeddings = torch.FloatTensor(embeddings)
     torch.save(x, 'datasets/embeddings.pt')
+'''
