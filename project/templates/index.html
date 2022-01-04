@@ -1,20 +1,30 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title> Hello World! </title>
-    </head>
-    <body>
-        <img src="https://github.com/MariyaSha/SimpleGreetingApp/blob/main/logo.png?raw=true">
-        <br>
-        <form action="greet" method="post">
-            {% for message in get_flashed_messages() %}
-                <p> {{message}} </p>
-            {% endfor %}
-            <br>
-            <input type="text" name="name_input">
-            <br>
-            <input type="submit" value="GREET" id="greet" >
-        </form>
-    </body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>GTCoding</title>
+    <link rel="stylesheet" href="static/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Pick the movies that you like!</h1>
+
+      <div class="group">
+        <input type="checkbox" id="xd" />
+        <label for="xd">Finding Nemo</label>
+      </div>
+
+      <div class="group">
+        <input type="checkbox" id="figma" />
+        <label for="figma">Moana</label>
+      </div>
+
+      <div class="group">
+        <input type="checkbox" id="sketch" />
+        <label for="sketch">Lion king</label>
+      </div>
+    </div>
+  </body>
 </html>
