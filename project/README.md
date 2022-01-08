@@ -2,7 +2,7 @@
 
 ![alt text](https://github.com/alishibli97/Scalable-Machine-Learning-and-Deep-Learning/blob/main/project/scalable.PNG)
 
-This project fuses collaborative filtering and content-based recommendation for netflix movie recommendation. You can view our report at: 
+This project fuses collaborative filtering and content-based recommendation for netflix movie recommendation. You can view our report at [Project_Scalable.pdf](https://github.com/alishibli97/Scalable-Machine-Learning-and-Deep-Learning/blob/main/project/Project_Scalable.pdf).
 
 ## Project Structure
 The structure of the project is as follows:
