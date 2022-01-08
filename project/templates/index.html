@@ -1,33 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>GTCoding</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <h1>Pick the movies that you like!</h1>
 
-      <div class="group">
-        <input type="checkbox" id="xd" />
-        <label for="xd">Moana</label>
-      </div>
+<img src="static/logo.jpeg" width="800" height="800" align="right" hspace="20" vspace="20">
 
-      <div class="group">
-        <input type="checkbox" id="figma" />
-        <label for="figma">Finding Nemo</label>
-      </div>
+<div class="container-fluid" >
 
-      <div class="group">
-        <input type="checkbox" id="sketch" />
-        <label for="sketch">Lion King</label>
-      </div>
-      <div class="group">
-        <input type="submit" id="submit" />
-      </div>
-    </div>
-  </body>
-</html>
+  <p style="font-size:30px">Select the movies you like and submit</p>
+
+  <form method = "post">
+    
+    <div class="col-sm-5">
+      {%for movie_abstract in movies_abstracts%}
+      <input name = {{movie_abstract[0]}} type = "checkbox"> <b>{{movie_abstract[0]}}</b>
+      <br>
+      <!-- <p style="color:green">Short summary:</p>  -->
+      <i><b><p style="color:green">{{movie_abstract[1]}}</p></b></i>
+      <br>
+      <br>
+    {%endfor%}
+    <br><br>
+    <input class="btn btn-primary btn-lg" type = "submit" value="Submit" width="300" >
+  </div>
+</form>
+
+<br><br>
+
+<table>
+  <b><p style="color:red">Your top 5 genres by order are:</p></b>
+
+  <th> <p style="color:blue">Genre</p> </th>
+  <th> <p style="color:blue">Count</p> </th>
+
+  {%for genre in genres%}
+  <tr>
+    <th>{{genre[0]}}</th>
+    <th>{{genre[1]}}</th>  
+  </tr>
+  {%endfor%}
+</table>
+<br>
+</div>
+</div>
