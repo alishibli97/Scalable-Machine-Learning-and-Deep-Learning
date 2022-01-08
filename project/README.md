@@ -1,3 +1,7 @@
+# Netflix Movie Recommendation
+
+
+
 The structure of the project is as follows:
 
 1. app.py runs the flask GUI interface
