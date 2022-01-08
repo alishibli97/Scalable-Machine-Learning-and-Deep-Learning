@@ -1,7 +1,9 @@
 # Netflix Movie Recommendation
 
+## Summary
+This project fuses collaborative filtering and content-based recommendation for netflix movie recommendation. You can view our report at: 
 
-
+## Project Structure
 The structure of the project is as follows:
 
 1. app.py runs the flask GUI interface
@@ -10,7 +12,7 @@ The structure of the project is as follows:
 4. BT_filtered.py filters the watch list with the only the movies present in the netflix dataset (2000-2015)
 5. train_CNF.ipynb trains the NCF network for collaborative filtering
 
-
+## Libraries Required
 The project makes use of the following libraries:
 1. flask
 2. tensorflow
@@ -19,5 +21,6 @@ The project makes use of the following libraries:
 5. pandas
 6. numpy
 
+## Running the code
 To run the code, you just need to run:
 ```python flask run```
