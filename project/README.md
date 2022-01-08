@@ -5,7 +5,7 @@ This project fuses collaborative filtering and content-based recommendation for 
 ## Project Structure
 The structure of the project is as follows:
 
-1. app.py runs the flask GUI interface
+1. [app.py]{https://github.com/alishibli97/Scalable-Machine-Learning-and-Deep-Learning/blob/main/project/app.py} runs the flask GUI interface
 2. suggestion_model.py is the source for suggesting movies based on movie summaries
 3. SBERT_embedding.ipynb generate movies summaries embeddings using SBERT
 4. BT_filtered.py filters the watch list with the only the movies present in the netflix dataset (2000-2015)
