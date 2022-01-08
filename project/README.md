@@ -1,6 +1,5 @@
 # Netflix Movie Recommendation
 
-## Summary
 This project fuses collaborative filtering and content-based recommendation for netflix movie recommendation. You can view our report at: 
 
 ## Project Structure
@@ -23,4 +22,5 @@ The project makes use of the following libraries:
 
 ## Running the code
 To run the code, you just need to run:
+
 ```python flask run```
