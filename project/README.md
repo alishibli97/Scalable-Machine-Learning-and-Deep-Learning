@@ -26,3 +26,7 @@ The project makes use of the following libraries:
 To run the code, you just need to run:
 
 ```python flask run```
+
+## Example output
+
+![alt text](https://github.com/alishibli97/Scalable-Machine-Learning-and-Deep-Learning/blob/main/project/project.png)
